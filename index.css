@@ -3,5 +3,18 @@ img{
 }
 
 .container-sm{
-    margin-top: 55px;
+    margin-top: 72px;
+}
+#navbar #footer{
+    background-color: rgb(238, 230, 230);
+}
+
+/* #ig #wave{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    font-size: 80px;
+} */
+#copy{
+    margin:auto;
 }

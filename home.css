@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.parallax{
+    perspective: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    -webkit-perspective-origin: 100%;
+    background: url(./images/nasa.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.group{
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform-origin-x: 100%;
+}
+
+#first{
+    height: 125vh;
+}
+
+.head{
+    font-size: 4em;
+    font-weight: 400;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 0.5em;
+    line-height: 1.2em;
+}
+#text a{
+    color: white;
+}
+
+.dua{
+    background: url(./images/astronout.png) 12% 45% no-repeat;
+    background-size: 20%;
+     transform: translateZ(60px) scale(.8);
+     z-index: 4;
+}
+
+.satu{
+    background: url(./images/astronout2.png)104% 88% no-repeat;
+    background-size: 20%;
+     transform: translateZ(100px) scale(.9);
+     z-index: 5;
+}
+
+/* .ut{
+    transform: translateZ(60px) scale(.6);
+    z-index: 5;
+    width: 80%;
+    margin: 0 auto;
+
+} */
+
+.tiga{
+    background: url(./images/planet.png) 45% 10% no-repeat;
+   background-size: 10%;
+   transform: translateZ(100px) scale(.8);
+ z-index: 1;
+}

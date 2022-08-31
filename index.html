@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="./index.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
-
-</head>
-<title>Belajar Github Dasar</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="./assets/font-awesome/css/all.min.css">
+    <title>Belajar Github Dasar</title>
+  </head>
 
 <body>
 
 <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light text-dark shadow-sm p-3 mb-5 fixed-top" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
+          <a class="navbar-brand" href="./home.html">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,24 +42,34 @@
 <!-- Card Body -->
 <div class="container-sm">
 <div class="card-body bg-secondary">
-   <h1 class="mb-3 me-3">Apa Itu Git</h1><hr>
+   <h1 class="mb-3 me-3 mt-2 text-center" id="text">Apa Itu Git</h1><hr>
    <div class="row">
     <div class="col-12">
-        <img src="./images/git1.png" class="img-fluid rounded-2" alt="Github"><hr>
+        <img src="./images/git1.png" class="img-fluid" alt="Github"><hr>
     </div>
-    <div class="col-5 me-3">
+    <div class="col-5 me-5">
         <h2>Pengertian Git</h2>
         <p>Git adalah salah satu sistem pengontrol versi (Version Control System) pada proyek perangkat lunak yang diciptakan oleh Linus Torvalds. Pengontrol versi bertugas mencatat setiap perubahan pada file proyek yang dikerjakan oleh banyak orang maupun sendiri.</p>
         <p> Git dikenal juga dengan distributed revision control (VCS terdistribusi), artinya penyimpanan database Git tidak hanya berada dalam satu tempat saja.</p>
         <img src="./images/git2.png" class="img-thumbnail mt-2 mb-3" alt="...">
-        <p class="mt-2">Semua orang yang terlibat dalam pengkodean proyek akan menyimpan database Git, sehingga akan memudahkan dalam mengelola proyek baik online maupun offline.</p>
+        <p>Semua orang yang terlibat dalam pengkodean proyek akan menyimpan database Git, sehingga akan memudahkan dalam mengelola proyek baik online maupun offline.</p>
         <p>VCS terpusat memiliki beberapa kekurangan:</p>
             <ul>
                 <li>Semua tim harus terkoneksi ke jaringan untuk mengakses source-code;</li>
                 <li>Tersimpan di satu tempat, nanti kalau server bermasalah bagaimana?</li>
             </ul>
         <p>Karena itu, Git hadir untuk menutupi kerkurangan yang dimiliki oleh VCS terpusat.</p>
-    </div>
+        <h2>Apa yang dilakukan oleh Git?</h2>
+        <p>Git sebenarnya akan memantau semua perubahan yang terjadi pada file proyek. Lalu menyimpannya ke dalam database.</p>
+        <p>Sebelum menggunakan git:</p>
+        <img src="./images/git5.png" class="img-thumbnail mt-2 mb-3" alt="...">
+        <p>Setelah menggunakan git: </p>
+        <img src="./images/git6.png" class="img-thumbnail mt-2 mb-3" alt="...">
+        <p>Saat kita ingin menyimpan semua perubahan pada file, biasanya kita membuat file baru dengan “save as”. Lalu, file akan menumpuk dalam direktori proyek seperti pada ilustrasi di atas.</p>
+        <p>Tapi setelah menggunakan Git…</p>
+        <p>Hanya akan ada satu file dalam proyek dan perubahannya disimpan dalam database.</p>
+        <p>Git hanya akan menyimpan delta perubahannya saja, dia tidak akan menyimpan seluruh isi file yang akan memakan banyak memori.</p>
+      </div>
     <div class="col-6 me-4">
         <h2>Bagaimana Cara Menggunakan Git?</h2>
         <p>Ada beberapa langkah yang perlu dilakukan untuk menggunakan git yaitu :</p>
@@ -68,16 +79,43 @@
                 <img src="./images/git3.png" class="img-thumbnail mt-2 mb-3" alt="...">
                 <p>Setelah terbuat akun-nya, login dengan akun baru(kalau langsung diarahkan ke halaman utama), setelah itu pada pojok kanan atas terdapat tombol <b>“+”</b>, klik button tersebut dan pilih <b>“new repository”.</b></p>
             </li>
-            <li><b>Membuat Repositori online</b></li>
+            <li><b>Membuat Repositori online</b>
+            <p>Lalu kalian akan diarahkan ke halaman pembuatan repository, pembuatan repositori ini tergantung dari project kalian yang mau kalian upload, jadi saya harapkan kalian sudah punya proyek yang ingin di upload ke repositori.</p>
+            <img src="./images/git4.png" class="img-thumbnail mt-2 mb-3" alt="...">
+          </li>
+          <li><b>Mengupload folder(repositori lokal)</b>
+          <p>jika sudah memiliki proyek yang ingin diletakkan di repository online, buka saja folder project tersebut dengan perintah command line, atau jika belum terbiasa di command line (nanti belajar command line) buka saja folder tersebut menggunakan file exploler dan klik kanan <b>“open terminal/cmder here”.</b></p></li>
+          <img src="./images/git4.png" class="img-thumbnail mt-2 mb-3" alt="...">
+          </li>
+          <li><b>Mengerjakan projek</b>
+          <p>Selanjutnya yang harus dilakukan adalah mengerjakan projek untuk di publish di Github agar dapat menjadi portofolio teman-teman</p>
+        </li>
         </ul>
     </div>
    </div>
-
-
    </div>
 </div>
 </div>
 <!-- End Card Body -->
+<!-- Footer -->
+<div class="card-footer border-top" id="footer">
+  <div class="container mt-3">
+  <div class="row">
+    <div class="col-6 me-5 text-dark">
+      <span><i class="fa-brands fa-instagram"></i><a class="text-decoration-none text-dark" href="https://www.instagram.com/titinmidukpurba/">Instagram</a></span>
+      <div><span><i class="fa-brands fa-linkedin mt-2 mb-2"></i><a class="text-decoration-none text-dark" href="linkedin.com/in/titinmiduknewyearpurba/">Linkedin</a></span></div>
+      <div><span><i class="fa-brands fa-facebook"></i><a class="text-decoration-none text-dark" href="facebook.com/in/">Facebook</a></span></div>
+    </div>
+    <div class="col-2 me-5"></div>
+    <div class="col-2 me-5">
+      <a href="#" class="text-decoration-none text-dark ">About Us</a><br>
+      <a href="#" class="text-decoration-none text-dark ">Contact Us</a>
+    </div>
+  </div>
+  </div>
+  <p class="text-center mt-3 p-2 text-dark"><b>Copyright &copy; 2022</b></p>
+
+<!-- End Footer -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
